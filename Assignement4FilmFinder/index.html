@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film Finder</title>
+    <script defer src="moviedatabase.js?speed=2"></script>
+    <script defer src="script.js?speed=2"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>Film Finder</header>
+    <form class="searchbar-form">
+      <input id="search" type="text" class="input" />
+    </form>
+
+    <nav>
+      <div>
+        <input
+          type="radio"
+          id="new-movies"
+          name="filter-movies"
+          class="filter-movies"
+          value="new-movies"
+        />
+        <label for="new-movies">NEW MOVIES</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          id="avenger-films"
+          name="filter-movies"
+          class="filter-movies"
+          value="avenger-films"
+        />
+        <label for="avenger-films">AVENGER MOVIES</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          id="x-men-films"
+          name="filter-movies"
+          class="filter-movies"
+          value="x-men-films"
+        />
+        <label for="x-men-films">X-MEN MOVIES</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          id="princess-films"
+          name="filter-movies"
+          class="filter-movies"
+          value="princess-films"
+        />
+        <label for="princess-films">PRINCESS MOVIES</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          id="batman-films"
+          name="filter-movies"
+          class="filter-movies"
+          value="batman-films"
+        />
+        <label for="batman-films">BATMAN MOVIES</label>
+      </div>
+    </nav>
+    <main>
+      <ul id="movielist"></ul>
+    </main>
+  </body>
+</html>
